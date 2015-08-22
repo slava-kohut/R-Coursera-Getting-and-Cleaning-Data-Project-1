@@ -1,5 +1,5 @@
 #
-# set up the directory
+# set up the directory and load dplyr
 #
 
 library(dplyr)
@@ -48,7 +48,7 @@ data_set<-cbind(subjects,activities,data_set)
 activities_labels<-readLines("./activity_labels.txt")
 activities_labels<-read.table(text=activities_labels,colClasses = c("integer","character"),sep=" ")
 
-# STEP 4: appropriately labels the data set with descriptive variable names
+# STEP 4: appropriately label the data set with descriptive variable names
 # 4.1 extract the variables' names
 # 4.2 rename the columns
 #
@@ -59,7 +59,6 @@ data_set$activities<-activities_labels[data_set$activities,2]
 
 # STEP 5: create a tidy data set with the average of each variable for each activity and each subject
 
-unique(data_set$activities)
 tidy_data_set<-data_set %>% group_by(subjects,activities) %>% summarise_each(funs(mean))
 
 # STEP 6: write out the data set
