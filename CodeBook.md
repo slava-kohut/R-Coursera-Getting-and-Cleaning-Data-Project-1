@@ -9,5 +9,19 @@ The script *run-analysis.R* performs the following sequence of operations:
 4. appropriately labels the data set with the descriptive activity names
 5. from the data set in the previous step, creates a second, independent tidy data set with the average of each variable for each activity and each subject.
 
+**Step 1**
+---
+
+**Step 2**
+---
+
+**Step 3**
+---
+
+**Step 4**
+---
+
+**Step 5**
+---
 
 
