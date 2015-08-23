@@ -60,7 +60,4 @@ data_set$activities<-activities_labels[data_set$activities,2]
 # STEP 5: create a tidy data set with the average of each variable for each activity and each subject
 
 tidy_data_set<-data_set %>% group_by(subjects,activities) %>% summarise_each(funs(mean))
-
-# STEP 6: write out the data set
-
 write.table(tidy_data_set,file="~/Desktop/DSS/3-getting-and-cleaning-data/tidy_data_set.txt",row.names=FALSE)
