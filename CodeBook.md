@@ -11,11 +11,7 @@ The script *run-analysis.R* performs the following sequence of operations:
 
 **Step 1**
 ---
-The training and test sets are loaded into `training_set` and `test_set`, respectively. 
-Activities' list for the training and the test sets are loaded into into `activities_training_set` and `activities_test_set`, respectively.
-A list of subjects performing activities for the training and test sets are loaded into `subjects_training_set` and `subjects_test_set`, respectively.
-The `read.table()` function is used for reading data from external files. 
-The six data sets are then combined to form three global data sets for the activities, subjects and data.  
+The training and test sets are loaded into `training_set` and `test_set`, respectively.  Activities' list for the training and the test sets are loaded into into `activities_training_set` and `activities_test_set`, respectively. A list of subjects performing activities for the training and test sets are loaded into `subjects_training_set` and `subjects_test_set`, respectively. The `read.table()` function is used for reading data from external files. The six data sets are then combined to form three global data sets for the activities, subjects and data.  
 
 **Step 2**
 ---
