@@ -25,14 +25,17 @@ After such measurements are extracted, `data_set` is merged with `subjects` and 
 
 **Step 3**
 ---
-A list of activities is read from a file into the list `activities_labels`.
+A list of activities' labels is read from a file into the list `activities_labels`.
 
 **Step 4**
 ---
 The columns in `data_set` are labeled with the descriptive variable names. 
 The first two columns represent subjects and activities at this point.
+Activities' decriptive indices are further replaced with their names from `activities_labels`.
 
 **Step 5**
 ---
+A tidy data set that contains with the average of each variable for each activity and each subject is created from `data_set` using the `summarise_each` function.
+This data set is written out to the file `tidy_data_set.txt`.
 
 
