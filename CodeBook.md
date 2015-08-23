@@ -25,7 +25,7 @@ After such measurements are extracted, `data_set` is merged with `subjects` and 
 
 **Step 3**
 ---
-A list of features is read from a file into the list `activities_labels`.
+A list of activities is read from a file into the list `activities_labels`.
 
 **Step 4**
 ---
