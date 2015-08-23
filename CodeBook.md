@@ -20,7 +20,8 @@ The six data sets are then combined to form three global data sets `subjects`,`a
 **Step 2**
 ---
 A list of features is read from a file into `features`.
-The measurements on the mean and standard deviation are extracted from `data_set` using the `grep` function supplied with a regular expression.
+The measurements on the mean and standard deviation are extracted from `data_set` using the `grep` function supplied with a regular expression. 
+After such measurements are extracted, `data_set` is merged with `subjects` and `activities`.
 
 **Step 3**
 ---
@@ -28,6 +29,8 @@ A list of features is read from a file into the list `activities_labels`.
 
 **Step 4**
 ---
+The columns in `data_set` are labeled with the descriptive variable names. 
+The first two columns represent subjects and activities at this point.
 
 **Step 5**
 ---
