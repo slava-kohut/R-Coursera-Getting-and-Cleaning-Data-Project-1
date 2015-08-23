@@ -11,6 +11,8 @@ The script *run-analysis.R* performs the following sequence of operations:
 
 **Step 1**
 ---
+The training and test set are loaded into `training_set` and `test_set`, respectively. 
+The `read.table()` function is used to do that. 
 
 **Step 2**
 ---
